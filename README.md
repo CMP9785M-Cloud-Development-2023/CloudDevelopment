@@ -1,3 +1,4 @@
 # Cloud Development Workshops
 
-workshop1.html
+https://CMP9785M-Cloud-Development-2023.github.io/CloudDevelopment/workshop1.html
+
