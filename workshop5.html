@@ -61,15 +61,26 @@
 <p>7.<strong> Select setting:</strong> Select the Create new local app setting</p>
 <p>8. <strong>Select an event hub namespace</strong>: select Skip for now</p>
 <p>9. Press enter for this step where the IoT hub endpoint name of <strong>messages/events</strong> is displayed</p>
-<p>10. When this mesages is displayed: 'In order to debig, you must select a storage account......', click the 'Select storage account' button</p>
-<p>11. Select the <strong>Create new storage account</strong> option and enter a unique name using only numbers and lowercase letters</p>
+<p>10. Now you will need to create a new storage account, select Resources (Azure Button) and Create Storage Account (Advanced)</p>
+<p>&nbsp;</p>
+<p><img src="images/WS5 - Create Storage Account.png" width="848" height="667" alt=""/></p>
+<p>&nbsp;</p>
+<p>11. Select the <strong>Create new storage account (Advanced)</strong> option and enter a unique name using only numbers and lowercase letters</p>
 <p>12. <strong>Select a resource group for new resources</strong>: you should already have one created from when you create your Azure IoT hub from workshop 4, please select this one. My resource group was called <strong>temperaturesensor</strong>, yours may be something similar or the same</p>
-<p>13. <strong>Select a location for new resources</strong>: select the location closest to you, in my case Is selected UK West</p>
-<p>14. <strong>Select how you would like to open your project</strong>: select Add to workspace</p>
+<p>13. <strong>Select a location for new resources</strong>: select the location closest to you, in my case I selected UK South</p>
+<p>14. <strong>If you see Select how you would like to open your project</strong>: select Add to workspace</p>
 <p>&nbsp;</p>
 <p>Your IoTHubTrigger function app cloud services will be created as well as the source files you can begin to edit in VSC:</p>
 <p>&nbsp;</p>
 <p><img src="images/workshop5v2_7.PNG" width="448" height="667" alt=""/></p>
+<p>&nbsp;</p>
+<p>We need to copy the storage account connection string for the storage account we just created:</p>
+<p>&nbsp;</p>
+<p><img src="images/WS5 - Copy Storage Connection String - 2023-03-07 16_13_36-local.settings.json - triggers - Visual Studio Code.png" width="748" height="667" alt=""/></p>
+<p>&nbsp;</p>
+<p>And add it as a line in our local.settings.json file (so it can be used in code we write):</p>
+<p>&nbsp;</p>
+<p><img src="images/WS5 - Add Storage Connection String to local settings json.png" width="1248" height="667" alt=""/></p>
 <p>&nbsp;</p>
 <p>Now open the .csproj file that is part of your function, in the screenshot above it is called <strong>IoTHubTrigger.csproj</strong>. You are going to add packages to bring in more SDKs, for example for your trigger code to interact with Cosmos DB and Azure IoT Hub devices. Add the below lines to your .csproj file (remember your file names may be different):</p>
 <pre><code class="cs">
