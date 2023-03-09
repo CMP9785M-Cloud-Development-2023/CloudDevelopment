@@ -20,6 +20,11 @@
 <p>Part 1 - Create a Cosmos DB to store temperature data from the simulated device app</p>
 <p>Part 2 - Create a serverless function that is triggered whenever your IoT hub receives sensor data, and save it to your Cosmos DB database</p>
 <p>&nbsp;</p>
+<h2>Before We Start</h2>
+<p>It appears that we need to install the Azure Functions Core Tools (v4) - Eventually we'll install it in the lab, but for now we need to install it manually</p>
+<p>Go to <a href="https://go.microsoft.com/fwlink/?linkid=2174087">here</a>. Download and run the installer </p>
+<p>For those interested, the github for the azure function core tools is <a href="https://github.com/Azure/azure-functions-core-tools">here</a>.
+<p>&nbsp;</p>
 <h2>Part 1 - Create a Cosmos DB</h2>
 <p>For this part of the workshop you will create a new resource on Azure in the form of a Cosmos DB store. The database will store the temperature data sent from the simulated device app.</p>
 <p>To get started login to your Azure account <a href="http://portal.azure.com/">here</a>. When logged in, click the Home button as shown below to ensure you are on the correct landing page:</p>
@@ -32,9 +37,28 @@
 <p>&nbsp;</p>
 <p><img src="images/workshop4_image2.png" width="500" height="763" alt=""/></p>
 <p>&nbsp;</p>
-<p><img src="images/workshop5v2_1.PNG" width="1000" height="945" alt=""/></p>
+<p>Here are the settings for the cloud DB, check each one</p>
 <p>&nbsp;</p>
-<p><img src="images/workshop5v2_2.PNG" width="800" height="867" alt=""/></p>
+
+<p><img src="images/WKS5 - Create Azure Cosmos DB Account 1.png" width="1800" height="945" alt=""/></p>
+<p>&nbsp;</p>
+<p><img src="images/WKS5 - Create Azure Cosmos DB Account 2.png" width="1800" height="945" alt=""/></p>
+<p>&nbsp;</p>
+<p><img src="images/WKS5 - Create Azure Cosmos DB Account 3.png" width="1800" height="945" alt=""/></p>
+<p>&nbsp;</p>
+<p><img src="images/WKS5 - Create Azure Cosmos DB Account 4.png" width="1800" height="945" alt=""/></p>
+<p>&nbsp;</p>
+<p><img src="images/WKS5 - Create Azure Cosmos DB Account 5.png" width="1800" height="945" alt=""/></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Finally, click create</p>
+<p>&nbsp;</p>
+<p><img src="images/WKS5 - Create Azure Cosmos DB Account 6.png" width="1800" height="945" alt=""/></p>
+<p>&nbsp;</p>
+
+<!-- <p><img src="images/workshop5v2_1.PNG" width="1000" height="945" alt=""/></p>
+<p>&nbsp;</p>
+<p><img src="images/workshop5v2_2.PNG" width="800" height="867" alt=""/></p> -->
 <p>&nbsp;</p>
 <p>OK - you now have a Cosmos DB account that is deployed and configured for use with the SQL API. Wait until the 'Deployment is in progress' message is complete and the blue button name 'Go to resource' appears and click it.</p>
 <p>Next, you will add a database and container (collection of items) that will be used to store the sensor data from the simulated device app::</p>
