@@ -11,4 +11,7 @@ https://CMP9785M-Cloud-Development-2023.github.io/CloudDevelopment/workshop4.htm
 https://CMP9785M-Cloud-Development-2023.github.io/CloudDevelopment/workshop5.html
 ## workshop 6
 https://CMP9785M-Cloud-Development-2023.github.io/CloudDevelopment/workshop6.html
-
+## workshop 7
+https://CMP9785M-Cloud-Development-2023.github.io/CloudDevelopment/workshop7.html
+## workshop 8
+https://CMP9785M-Cloud-Development-2023.github.io/CloudDevelopment/workshop8.html
